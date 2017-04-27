@@ -1,0 +1,146 @@
+body,html{
+	width:100%;
+	height:100%
+}
+.index-page{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	background-color: #bdbdbc;
+	animation-duration:3s;
+	-webkit-animation-duration:3s;
+	.index-bg{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top:-10px;
+		left: -20px;
+		ul{
+			width: 101%;
+			height: 101%;
+			.layer{
+				width: 101%;
+				height: 101%;
+				background: url('../../images/index-bg.jpg') no-repeat center center;
+			}
+		}
+		
+	}
+	.nav-container{
+		width: 100%;
+		height: 34px;
+		position: absolute;
+		top:50px;
+		left:0px;
+		.nav{
+			margin:0 auto;
+			max-width: 1430px;
+			min-width:892px;
+			height: 34px;
+			.nav-logo{
+				width: 130px;
+				height: 34px;
+				float: left;
+				position: relative;
+				margin-left:3%;
+				a{
+					img{
+						position: absolute;
+						top: 0px;
+						left: 0px;
+					}
+				}
+			}
+			.nav-box{
+				width: 656px;
+				height: 34px;
+				float: right;
+				position: relative;
+				overflow: hidden;
+				.nav-active{
+					a{
+						&:before{
+							content: '';
+							width: 100%;
+							height: 2px;
+							background-color: #6b6b6b;
+							position: absolute;
+							bottom: -3px;
+							left: 0px;
+						}
+					}
+				}
+				ul{
+					width: 656px;
+					height: 34px;
+					position: absolute;
+					left: 0px;
+					top: 0px;
+					li{
+						float: left;
+						margin:0 18px;
+						a{
+							font-size: 20px;
+							line-height: 34px;
+							color: #6b6b6b;
+							position: relative;
+						}
+					}
+				}
+			}
+			.nav-btn{
+				float: right;
+				cursor: pointer;
+				width: 18px;
+				height: 34px;
+				background: url("../../images/nav-btn-black.png") no-repeat center center;
+				margin-right: 3%;
+			}
+		}
+	}
+	.index-text-container{
+		width: 1024px;
+		height: 35%;
+		position: absolute;
+		bottom: 0px;
+		left: 50%;
+		margin-left: -512px;
+		.index-text{
+			width: 100%;
+			height: 100%;
+			.index-text-box{
+				margin:0 auto;
+				&:nth-child(1){
+					width: 16%;
+					height: 18%;
+					img{
+						width:100%;
+					}
+				}
+				&:nth-child(2){
+					width: 23%;
+					height: 30%;
+					img{
+						width:100%;
+					}
+				}
+				&:nth-child(3){
+					width: 16%;
+					height: 35%;
+					cursor: pointer;
+					img{
+						width:100%;
+					}
+				}
+				&:nth-child(4){
+					width: 100%;
+					height: 20%;
+					img{
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+}
